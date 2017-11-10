@@ -7,7 +7,7 @@
   <body>
 
     <header class="main-header">
-    	<h1 class="main-title">Глейси - магазин мороженого</h1>
+    	<h1 class="main-header_title">Глейси - магазин мороженого</h1>
     	
     	<a class="main-header_logo-link">
    			<img src="img/svg/logo.svg" alt="Глейси - магазин мороженого" class="main-header_logo-img" width="154" height="64">
@@ -16,7 +16,7 @@
     	<nav class="main-navigation">
     		<ul class="main-navigation_list">
     			<li class="main-navigation_item">
-    				<a href="#" class="main-navigation_link main-navigation_link--catalog">Каталог</a>
+    				<a href="#" class="main-navigation_link">Каталог</a>
     				<ul class="catalog-list">
     					<li class="catalog-list_item">
     						<a href="#" class="catalog-list_link catalog-list_link--new">Новинки</a>
@@ -50,51 +50,49 @@
     		</ul>
     	</nav>
     	
-    	<nav class="user-navigation">
-    		<ul class="user-navigation_list">
-    			<li class="user-navigation_item">
-    				<a href="#" class="user-navigation_link user-navigation_link--search">Поиск</a>
-    				
-    				<form action="#" method="get" class="search-form">
-    					<label for="search-form_search-field-id">Текст для поиска:</label>
-    					<input type="search" name="search" class="search-form_field" id="search-form_search-field-id">
-    					<input type="submit" class="btn btn--serch-form" value="Найти">
-    				</form>
-    			</li>
-    			
-    			<li class="user-navigation_item">
-    				<a href="#" class="user-navigation_link user-navigation_link--sing-in">Вход</a>
-    				
-    				<form action="#" method="get" class="sing-in-form" name="sing-in-form">
-    					<label for="sing-in-form_name-field-id">Ваш e-mail:</label>
-    					<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_name-field-id">
-    					
-    					<label for="sing-in-form_password-field-id">Ваш пароль:</label>
-    					<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_password-field-id">
-    					
-    					<input type="submit" class="btn btn--sing-in-form" value="Войти">
-    					
-    					<ul class="sing-in-form_help-list">
-							<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
-							<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Новая регистрация</a></li>
-    					</ul>
-    				</form>
-    			</li>
-    			
-    			<li class="user-navigation_item">
-    				<a href="#" class="user-navigation_link user-navigation_link--basket">Корзина</a>
-    				
-    				<form action="#" method="get" class="basket-form" name="basket-form">
-    					<table class="basket-form_list">
-    						<!--Не совсем понимаю еще, как лучше сделать список корзины. 
-    							Предпологаю, что таблицей со вложенными элементами формы-->
-    					</table>
-    					
-    					<input type="submit" value="Оформить заказ">
-    				</form>
-    			</li>
-    		</ul>
-    	</nav>
+    	<div class="main-search">
+			<a href="#" class="main-search_link">Поиск</a>
+
+			<form action="#" method="get" class="main-search_form">
+				<label for="main-search_field-search" class="main-search_label">Текст для поиска:</label>
+				<input type="search" name="search" class="main-search_field" id="main-search_field-search">
+				<input type="submit" class="btn btn--serch-form" value="Найти">
+			</form>
+    	</div>
+    	
+
+		<div class="sing-in">
+			<a href="#" class="sing-in_link">Вход</a>
+
+			<form action="#" method="get" class="sing-in-form" name="sing-in_form sing-in-form">
+				<label for="sing-in-form_field-name">Ваш e-mail:</label>
+				<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_field-name">
+
+				<label for="sing-in-form_field-password">Ваш пароль:</label>
+				<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_field-password">
+
+				<input type="submit" class="btn btn--sing-in-form" value="Войти">
+
+				<ul class="sing-in-form_help-list">
+					<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
+					<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Новая регистрация</a></li>
+				</ul>
+			</form>
+		</div>
+
+		<div class="basket">
+			<a href="#" class="basket_link">Корзина</a>
+
+			<form action="#" method="get" class="basket_form" name="basket_form">
+				<table class="basket_form-list">
+					<!--Не совсем понимаю еще, как лучше сделать список корзины. 
+						Предпологаю, что таблицей со вложенными элементами формы-->
+				</table>
+
+				<input type="submit" value="Оформить заказ">
+			</form>
+		</div>
+
     	
     	<p class="main-header-contact-info">
     		<span class="main-header_working-time">С 10 до 20, ежедневно</span>
@@ -106,11 +104,11 @@
     	<section class="stock-slider">
     		<h2 class="stock-slider_title">Акция: 2 по цене 1</h2>
     		
-    		<p class="stock-slider_controls">
+    		<div class="stock-slider_controls">
     			<label for="stock-slider_slide-1" class="stock-slider_controls_item"></label>
     			<label for="stock-slider_slide-2" class="stock-slider_controls_item"></label>
     			<label for="stock-slider_slide-3" class="stock-slider_controls_item"></label>
-    		</p>
+    		</div>
     		
     		<ul class="stock-slider_slide-list">
 				<li class="stock-slider_item">
@@ -161,60 +159,60 @@
     		</ul>
     	</section>
     	
-    	<section class="hit-products">
-    		<h2 class="hit-products_title">Наши популярные товары</h2>
-    		<ul class="hit-products_list">
-    			<li class="hit-products_item product-card">
+    	<section class="products">
+    		<h2 class="products_title">Наши популярные товары</h2>
+    		<ul class="products_list">
+    			<li class="products_item product-card">
     				<a href="#" class="product-card_link">
     					<img src="img/hit-ice/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="product-card_img">
     					<img src="img/svg/hit.svg" alt="ХИТ" class="product-card_hit-img">
     					<h3 class="product-card_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-    					<p class="product-card_price">
+    					<div class="product-card_price">
     						310
     						<span class="product-card_measure">/кг</span>
-    					</p>
+    					</div>
     				</a>
     				
     				<button class="btn btn--fast-view">Быстрый просмотр</button>
     			</li>
     			
-    			<li class="hit-products_item product-card">
+    			<li class="products_item product-card">
     				<a href="#" class="product-card_link">
     					<img src="img/hit-ice/2.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="product-card_img">
     					<img src="img/svg/hit.svg" alt="ХИТ" class="product-card_hit-img">
     					<h3 class="product-card_name">Сливочно-кофейное с кусочками шоколада</h3>
-    					<p class="product-card_price">
+    					<div class="product-card_price">
     						380
     						<span class="product-card_measure">/кг</span>
-    					</p>
+    					</div>
     				</a>
     				
     				<button class="btn btn--fast-view">Быстрый просмотр</button>
     			</li>
     			
-    			<li class="hit-products_item product-card">
+    			<li class="products_item product-card">
     				<a href="#" class="product-card_link">
     					<img src="img/hit-ice/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="product-card_img">
     					<img src="img/svg/hit.svg" alt="ХИТ" class="product-card_hit-img">
     					<h3 class="product-card_name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-    					<p class="product-card_price">
+    					<div class="product-card_price">
     						355
     						<span class="product-card_measure">/кг</span>
-    					</p>
+    					</div>
     				</a>
     				
     				<button class="btn btn--fast-view">Быстрый просмотр</button>
     			</li>
     			
-    			<li class="hit-products_item product-card">
+    			<li class="products_item product-card">
     				<a href="#" class="product-card_link">
     					<img src="img/hit-ice/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="product-card_img">
     					<img src="img/svg/hit.svg" alt="ХИТ" class="product-card_hit-img">
     					<h3 class="product-card_name">Сливочное крем-брюле с карамельной подливкой</h3>
-    					<p class="product-card_price">
+    					<div class="product-card_price">
     						415
     						<span class="product-card_measure">/кг</span>
-    					</p>
+    					</div>
     				</a>
     				
     				<button class="btn btn--fast-view">Быстрый просмотр</button>
@@ -259,8 +257,8 @@
     		<h2 class="subscription_title">Подпишитесь на нас</h2>
     		<p class="subscription_text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
     		<form action="#" class="subscription_form" name="subscription_form">
-    			<label for="subscription_email-field-id" class="subscription_email-label">Ваш e-mail:</label>
-    			<input type="email" name="email" id="subscription_email-field-id" class="subscription_email-field">
+    			<label for="subscription_field-email" class="subscription_email-label">Ваш e-mail:</label>
+    			<input type="email" name="email" id="subscription_field-email" class="subscription_field">
     			
     			<input type="submit" class="btn" value="Отправить">
     		</form>
@@ -292,14 +290,14 @@
     <form action="#" class="feedback-form">
     		<h3 class="feedback-form_title">Мы обязательно вам ответим!</h3>
     		
-			<label for="name" class="feedback-form_field-label">Ваше имя:</label>
-			<input type="text" id="name" name="name" class="feedback-form_field" placeholder="Как вас зовут?">
+			<label for="feedback-form_name-field-id" class="feedback-form_field-label">Ваше имя:</label>
+			<input type="text" id="feedback-form_field-name" name="name" class="feedback-form_field" placeholder="Как вас зовут?">
 
-			<label for="email" class="feedback-form_field-label">Ваш e-mail:</label>
-			<input type="email" id="email" name="email" class="feedback-form_field" placeholder="Ваша почта для ответа?">
+			<label for="feedback-form_email-field-id" class="feedback-form_field-label">Ваш e-mail:</label>
+			<input type="email" id="feedback-form_field-email" name="email" class="feedback-form_field" placeholder="Ваша почта для ответа?">
     	
-    	<label for="message" class="feedback-form_field-label">Текст письма:</label>
-    	<textarea name="message" id="message" class="feedback-form_textarea" placeholder="Напишите что-нибудь..."></textarea>
+    	<label for="feedback-form_message-field-id" class="feedback-form_field-label">Текст письма:</label>
+    	<textarea name="message" id="feedback-form_field-message" class="feedback-form_textarea" placeholder="Напишите что-нибудь..."></textarea>
     	
     	<input type="submit" class="btn btn--feedback-form">
 

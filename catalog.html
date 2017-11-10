@@ -16,7 +16,7 @@
     	<nav class="main-navigation">
     		<ul class="main-navigation_list">
     			<li class="main-navigation_item">
-    				<a href="#" class="main-navigation_link main-navigation_link--catalog">Каталог</a>
+    				<a href="#" class="main-navigation_link">Каталог</a>
     				<ul class="catalog-list">
     					<li class="catalog-list_item">
     						<a href="#" class="catalog-list_link catalog-list_link--new">Новинки</a>
@@ -50,68 +50,74 @@
     		</ul>
     	</nav>
     	
-    	<nav class="user-navigation">
-    		<ul class="user-navigation_list">
-    			<li class="user-navigation_item">
-    				<a href="#" class="user-navigation_link user-navigation_link--search">Поиск</a>
-    				
-    				<form action="#" method="get" class="search-form">
-    					<label for="search-form_search-field-id">Текст для поиска:</label>
-    					<input type="search" name="search" class="search-form_field" id="search-form_search-field-id">
-    					<input type="submit" class="btn btn--serch-form" value="Найти">
-    				</form>
-    			</li>
-    			
-    			<li class="user-navigation_item">
-    				<a href="#" class="user-navigation_link user-navigation_link--sing-in">Вход</a>
-    				
-    				<form action="#" method="get" class="sing-in-form" name="sing-in-form">
-    					<label for="sing-in-form_name-field-id">Ваш e-mail:</label>
-    					<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_name-field-id">
-    					
-    					<label for="sing-in-form_password-field-id">Ваш пароль:</label>
-    					<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_password-field-id">
-    					
-    					<input type="submit" class="btn btn--sing-in-form" value="Войти">
-    					
-    					<ul class="sing-in-form_help-list">
-							<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
-							<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Новая регистрация</a></li>
-    					</ul>
-    				</form>
-    			</li>
-    			
-    			<li class="user-navigation_item">
-    				<a href="#" class="user-navigation_link user-navigation_link--basket">Корзина</a>
-    				
-    				<form action="#" method="get" class="basket-form" name="basket-form">
-    					<table class="basket-form_list">
-    						<!--Не совсем понимаю еще, как лучше сделать список корзины. 
-    							Предпологаю, что таблицей со вложенными элементами формы-->
-    					</table>
-    					
-    					<input type="submit" value="Оформить заказ">
-    				</form>
-    			</li>
-    		</ul>
-    	</nav>
+    	    	<div class="main-search">
+			<a href="#" class="main-search_link">Поиск</a>
+
+			<form action="#" method="get" class="main-search_form">
+				<label for="main-search_field-search" class="main-search_label">Текст для поиска:</label>
+				<input type="search" name="search" class="main-search_field" id="main-search_field-search">
+				<input type="submit" class="btn btn--serch-form" value="Найти">
+			</form>
+    	</div>
+    	
+
+		<div class="sing-in">
+			<a href="#" class="sing-in_link">Вход</a>
+
+			<form action="#" method="get" class="sing-in-form" name="sing-in_form sing-in-form">
+				<label for="sing-in-form_field-name">Ваш e-mail:</label>
+				<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_field-name">
+
+				<label for="sing-in-form_field-password">Ваш пароль:</label>
+				<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_field-password">
+
+				<input type="submit" class="btn btn--sing-in-form" value="Войти">
+
+				<ul class="sing-in-form_help-list">
+					<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
+					<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Новая регистрация</a></li>
+				</ul>
+			</form>
+		</div>
+
+		<div class="basket">
+			<a href="#" class="basket_link">Корзина</a>
+
+			<form action="#" method="get" class="basket_form" name="basket_form">
+				<table class="basket_form-list">
+					<!--Не совсем понимаю еще, как лучше сделать список корзины. 
+						Предпологаю, что таблицей со вложенными элементами формы-->
+				</table>
+
+				<input type="submit" value="Оформить заказ">
+			</form>
+		</div>
+
     	
     	<p class="main-header-contact-info">
     		<span class="main-header_working-time">С 10 до 20, ежедневно</span>
     		<span class="main-header_phone">8 812 450-25-25</span>
     	</p>
     </header>
-    
     <main class="main">
     	<header class="catalog-header">
-			<h2 class="catalog-page-header_title">Сливочное мороженое</h2>
-			<ul class="breadcrumbs">
-				<li class="breadcrumbs-item">Главная</li>
-				<li class="breadcrumbs-item">Каталог</li>
-				<li class="breadcrumbs-item">Сливочное морожено</li>
+    		<ul class="breadcrumbs">
+				<li class="breadcrumbs-item">
+					<a href="index.html" class="breadcrumbs-link">Главная</a>
+				</li>
+				
+				<li class="breadcrumbs-item">
+					<a href="#" class="breadcrumbs-link">Каталог</a>
+				</li>
+				
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link">Сливочное мороженое</a>
+				</li>
 			</ul>
+    		
+			<h2 class="catalog-page-header_title">Сливочное мороженое</h2>
     	</header>
-    	<nav class="catalog-nav">
+    	<section class="catalog-nav">
     		<form action="#" class="catalog-nav_filter-form" method="get">
 				<fieldset class="catalog-nav_formgroup">
     					<legend class="catalog-nav_formgroup-title">Сортировка:</legend>
@@ -133,24 +139,24 @@
     			<fieldset class="catalog-nav_formgroup">
     				<legend class="catalog-nav_formgroup-title">Жирность</legend>
    					<div class="catalog-nav_item">
-    					<label>
+    					<label class="catalog-nav_label">
     						<input type="radio" name="fat" value="0" class="catalog-nav_radio">
-    						<span class="catalog-nav_label">0</span>
+    						0
     					</label>
     					
-    					<label>
+    					<label class="catalog-nav_label">
     						<input type="radio" name="fat" value="<10" class="catalog-nav_radio">
-    						<span class="catalog-nav_label">до 10</span>
+    						до 10
     					</label>
     					
-    					<label>
+    					<label class="catalog-nav_label">
     						<input type="radio" name="fat" value="<30" class="catalog-nav_radio">
-    						<span class="catalog-nav_label">до 30</span>
+    						до 30
     					</label>
     					
-    					<label>
+    					<label class="catalog-nav_label">
     						<input type="radio" name="fat" value=">30" class="catalog-nav_radio">
-    						<span class="catalog-nav_label">выше 30</span>
+    						выше 30
     					</label>
 					</div>
     			</fieldset>
@@ -159,193 +165,213 @@
 					<legend class="catalog-nav_formgroup-title">Наполнитель</legend>
 
 					<div class="catalog-nav_item">
-						<label>
-							<input type="checkbox" name="filler" value="chocolate" class="catalog-nav_checkbox">
-							<span class="catalog-nav_label">шоколадные</span>
+						<label class="catalog-nav_label">
+							<input type="checkbox" name="filler[]" value="chocolate" class="catalog-nav_checkbox">
+							шоколадные
 						</label>
 
-						<label>
-							<input type="checkbox" name="filler" value="sugar" class="catalog-nav_checkbox">
-							<span class="catalog-nav_label">сахарные присыпки</span>
+						<label class="catalog-nav_label">
+							<input type="checkbox" name="filler[]" value="sugar" class="catalog-nav_checkbox">
+							сахарные присыпки
 						</label>
 
-						<label>
-							<input type="checkbox" name="filler" value="fruit" class="catalog-nav_checkbox">
-							<span class="catalog-nav_label">фрукты</span>
+						<label class="catalog-nav_label">
+							<input type="checkbox" name="filler[]" value="fruit" class="catalog-nav_checkbox">
+							фрукты
 						</label>
 
-						<label>
-							<input type="checkbox" name="filler" value="syrup" class="catalog-nav_checkbox">
-							<span class="catalog-nav_label">сиропы</span>
+						<label class="catalog-nav_label">
+							<input type="checkbox" name="filler[]" value="syrup" class="catalog-nav_checkbox">
+							сиропы
 						</label>
 
-						<label>
-							<input type="checkbox" name="filler" value="jam" class="catalog-nav_checkbox">
-							<span class="catalog-nav_label">джемы</span>
+						<label class="catalog-nav_label">
+							<input type="checkbox" name="filler[]" value="jam" class="catalog-nav_checkbox">
+							джемы
 						</label>
 					</div>
     			</fieldset>
     				
     			<input type="submit" value="Показать" class="catalog-nav_submit">
     		</form>
-    	</nav>
-    	<ul class="products">
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="product-card_img">
-					<h3 class="product-card_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-					<p class="product-card_price">
-						310
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
-
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
+    	</section>
+    	
+    	<section class="products">
+    		<h2 class="products_title">Товары</h2>
     		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/2.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="product-card_img">
-					<h3 class="product-card_name">Сливочно-кофейное с кусочками шоколада</h3>
-					<p class="product-card_price">
-						380
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+			<ul class="products_list">
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="product-card_img">
+						<h3 class="product-card_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+						<div class="product-card_price">
+							310
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="product-card_img">
-					<h3 class="product-card_name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-					<p class="product-card_price">
-						355
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="product-card_img">
-					<h3 class="product-card_name">Сливочное крем-брюле с карамельной подливкой</h3>
-					<p class="product-card_price">
-						415
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/2.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="product-card_img">
+						<h3 class="product-card_name">Сливочно-кофейное с кусочками шоколада</h3>
+						<div class="product-card_price">
+							380
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/5.jpg" alt="Сливочное с брусничным джемом" class="product-card_img">
-					<h3 class="product-card_name">Сливочное с брусничным джемом</h3>
-					<p class="product-card_price">
-						325
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/6.jpg" alt="Сливочно-черничное с цельными ягодами черники" class="product-card_img">
-					<h3 class="product-card_name">Сливочно-черничное с цельными ягодами черники</h3>
-					<p class="product-card_price">
-						410
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="product-card_img">
+						<h3 class="product-card_name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+						<div class="product-card_price">
+							355
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/7.jpg" alt="Сливочно-лимонное с карамельной присыпкой" class="product-card_img">
-					<h3 class="product-card_name">Сливочно-лимонное с карамельной присыпкой</h3>
-					<p class="product-card_price">
-						375
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/8.jpg" alt="Сливочное с шоколадной стружкой" class="product-card_img">
-					<h3 class="product-card_name">Сливочное с шоколадной стружкой</h3>
-					<p class="product-card_price">
-						320
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="product-card_img">
+						<h3 class="product-card_name">Сливочное крем-брюле с карамельной подливкой</h3>
+						<div class="product-card_price">
+							415
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/9.jpg" alt="Сливочно-ванильное с кусочками шоколада" class="product-card_img">
-					<h3 class="product-card_name">Сливочно-ванильное с кусочками шоколада</h3>
-					<p class="product-card_price">
-						440
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/10.jpg" alt="Сливочное с ментоловым сиропом" class="product-card_img">
-					<h3 class="product-card_name">Сливочное с ментоловым сиропом</h3>
-					<p class="product-card_price">
-						435
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/5.jpg" alt="Сливочное с брусничным джемом" class="product-card_img">
+						<h3 class="product-card_name">Сливочное с брусничным джемом</h3>
+						<div class="product-card_price">
+							325
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/11.jpg" alt="Сливочное с кусочками черного шоколада" class="product-card_img">
-					<h3 class="product-card_name">Сливочное с кусочками черного шоколада</h3>
-					<p class="product-card_price">
-						355
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    		
-    		<li class="products_item product-card">
-				<a href="#" class="product-card_link">
-					<img src="img/catalog-ice/12.jpg" alt="Сливочное с мятным сиропом" class="product-card_img">
-					<h3 class="product-card_name">Сливочное с мятным сиропом</h3>
-					<p class="product-card_price">
-						420
-						<span class="product-card_measure">/кг</span>
-					</p>
-				</a>
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/6.jpg" alt="Сливочно-черничное с цельными ягодами черники" class="product-card_img">
+						<h3 class="product-card_name">Сливочно-черничное с цельными ягодами черники</h3>
+						<div class="product-card_price">
+							410
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
 
-				<button class="btn btn--fast-view">Быстрый просмотр</button>
-    		</li>
-    	</ul>
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
+
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/7.jpg" alt="Сливочно-лимонное с карамельной присыпкой" class="product-card_img">
+						<h3 class="product-card_name">Сливочно-лимонное с карамельной присыпкой</h3>
+						<div class="product-card_price">
+							375
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
+
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
+
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/8.jpg" alt="Сливочное с шоколадной стружкой" class="product-card_img">
+						<h3 class="product-card_name">Сливочное с шоколадной стружкой</h3>
+						<div class="product-card_price">
+							320
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
+
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
+
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/9.jpg" alt="Сливочно-ванильное с кусочками шоколада" class="product-card_img">
+						<h3 class="product-card_name">Сливочно-ванильное с кусочками шоколада</h3>
+						<div class="product-card_price">
+							440
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
+
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
+
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/10.jpg" alt="Сливочное с ментоловым сиропом" class="product-card_img">
+						<h3 class="product-card_name">Сливочное с ментоловым сиропом</h3>
+						<div class="product-card_price">
+							435
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
+
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
+
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/11.jpg" alt="Сливочное с кусочками черного шоколада" class="product-card_img">
+						<h3 class="product-card_name">Сливочное с кусочками черного шоколада</h3>
+						<div class="product-card_price">
+							355
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
+
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
+
+				<li class="products_item product-card">
+					<a href="#" class="product-card_link">
+						<img src="img/catalog-ice/12.jpg" alt="Сливочное с мятным сиропом" class="product-card_img">
+						<h3 class="product-card_name">Сливочное с мятным сиропом</h3>
+						<div class="product-card_price">
+							420
+							<span class="product-card_measure">/кг</span>
+						</div>
+					</a>
+
+					<button class="btn btn--fast-view">Быстрый просмотр</button>
+				</li>
+			</ul>
+   	
+   			<div class="products_paginator">
+				<a href="#" class="btn btn-paginator">Назад</a>
+
+				<ul class="paginator-list">
+					<li class="paginator-list_item"><a href="#" class="paginator-list_link">1</a></li>
+					<li class="paginator-list_item"><a href="#" class="paginator-list_link">2</a></li>
+					<li class="paginator-list_item"><a href="#" class="paginator-list_link">3</a></li>
+					<li class="paginator-list_item"><a href="#" class="paginator-list_link">4</a></li>
+					<li class="paginator-list_item"><a href="#" class="paginator-list_link">5</a></li>
+				</ul>
+
+				<a href="#" class="btn btn-paginator">Вперед</a>
+			</div>
+    	
+		</section>
     </main>
     
     <footer class="main-footer">
