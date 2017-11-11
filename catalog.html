@@ -7,35 +7,35 @@
   <body>
 
     <header class="main-header">
-    	<h1 class="main-title">Глейси - магазин мороженого</h1>
+    	<h1 class="main-header_title">Глейси - магазин мороженого</h1>
     	
-		<a href="index.html" class="main-header_logo-link">
-   			<img src="img/svg/logo.svg" alt="Глейси - магазин мороженого" class="main-header_logo-img" width="154" height="64">
+    	<a href="index.html" class="main-header_logo-link logo-link">
+   			<img src="img/svg/logo.svg" alt="Глейси - магазин мороженого" class="logo-link_img" width="154" height="64">
    		</a>
     	
-    	<nav class="main-navigation">
+    	<nav class="main-header_main-navigation main-navigation">
     		<ul class="main-navigation_list">
     			<li class="main-navigation_item">
     				<a href="#" class="main-navigation_link">Каталог</a>
-    				<ul class="catalog-list">
-    					<li class="catalog-list_item">
-    						<a href="#" class="catalog-list_link catalog-list_link--new">Новинки</a>
+    				<ul class="main-navigation_submenu submenu-list">
+    					<li class="submenu-list_item">
+    						<a href="#" class="submenu-list_link catalog-list_link--accent">Новинки</a>
     					</li>
     					
-    					<li class="catalog-list_item">
-    						<a href="#" class="catalog-list_link">Сливочное</a>
+    					<li class="submenu-list_item">
+    						<a href="catalog.html" class="submenu-list_link">Сливочное</a>
     					</li>
     					
-    					<li class="catalog-list_item">
-    						<a href="#" class="catalog-list_link">Щербеты</a>
+    					<li class="submenu-list_item">
+    						<a href="#" class="submenu-list_link">Щербеты</a>
     					</li>
     					
-    					<li class="catalog-list_item">
-    						<a href="#" class="catalog-list_link">Фруктовый лед</a>
+    					<li class="submenu-list_item">
+    						<a href="#" class="submenu-list_link">Фруктовый лед</a>
     					</li>
     					
-    					<li class="catalog-list_item">
-    						<a href="#" class="catalog-list_link">Мелорин</a>
+    					<li class="submenu-list_item">
+    						<a href="#" class="submenu-list_link">Мелорин</a>
     					</li>
     				</ul>
     			</li>
@@ -50,28 +50,28 @@
     		</ul>
     	</nav>
     	
-    	    	<div class="main-search">
-			<a href="#" class="main-search_link">Поиск</a>
+    	<div class="main-header_search">
+			<a href="#" class="main-header_search-link">Поиск</a>
 
-			<form action="#" method="get" class="main-search_form">
-				<label for="main-search_field-search" class="main-search_label">Текст для поиска:</label>
-				<input type="search" name="search" class="main-search_field" id="main-search_field-search">
-				<input type="submit" class="btn btn--serch-form" value="Найти">
+			<form action="#" method="get" class="main-header_search-form search-form">
+				<label for="search-form_field-search" class="search-form_label">Текст для поиска:</label>
+				<input type="search" name="search" class="search-form_field" id="search-form_field-search">
+				<input type="submit" class="btn search-form_btn" value="Найти">
 			</form>
     	</div>
     	
 
-		<div class="sing-in">
-			<a href="#" class="sing-in_link">Вход</a>
+		<div class="main-header_sing-in">
+			<a href="#" class="main-header_sing-in-link">Вход</a>
 
-			<form action="#" method="get" class="sing-in-form" name="sing-in_form sing-in-form">
+			<form action="#" method="get" class="main-header_sing-in-form sing-in-form" name="sing-in_form sing-in-form">
 				<label for="sing-in-form_field-name">Ваш e-mail:</label>
 				<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_field-name">
 
 				<label for="sing-in-form_field-password">Ваш пароль:</label>
 				<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_field-password">
 
-				<input type="submit" class="btn btn--sing-in-form" value="Войти">
+				<input type="submit" class="btn sing-in-form_btn" value="Войти">
 
 				<ul class="sing-in-form_help-list">
 					<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
@@ -80,7 +80,7 @@
 			</form>
 		</div>
 
-		<div class="basket">
+		<div class="main-header_basket basket">
 			<a href="#" class="basket_link">Корзина</a>
 
 			<form action="#" method="get" class="basket_form" name="basket_form">
@@ -89,7 +89,7 @@
 						Предпологаю, что таблицей со вложенными элементами формы-->
 				</table>
 
-				<input type="submit" value="Оформить заказ">
+				<input type="submit" value="Оформить заказ" class="btn basket_btn">
 			</form>
 		</div>
 
@@ -99,6 +99,7 @@
     		<span class="main-header_phone">8 812 450-25-25</span>
     	</p>
     </header>
+    
     <main class="main">
     	<header class="catalog-header">
     		<ul class="breadcrumbs">
@@ -117,8 +118,9 @@
     		
 			<h2 class="catalog-page-header_title">Сливочное мороженое</h2>
     	</header>
+    	
     	<section class="catalog-nav">
-    		<form action="#" class="catalog-nav_filter-form" method="get">
+    		<form action="https://echo.htmlacademy.ru/" class="catalog-nav_filter-form" method="get">
 				<fieldset class="catalog-nav_formgroup">
     					<legend class="catalog-nav_formgroup-title">Сортировка:</legend>
     					

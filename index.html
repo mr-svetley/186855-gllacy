@@ -9,33 +9,33 @@
     <header class="main-header">
     	<h1 class="main-header_title">Глейси - магазин мороженого</h1>
     	
-    	<a class="main-header_logo-link">
-   			<img src="img/svg/logo.svg" alt="Глейси - магазин мороженого" class="main-header_logo-img" width="154" height="64">
+    	<a class="main-header_logo-link logo-link">
+   			<img src="img/svg/logo.svg" alt="Глейси - магазин мороженого" class="logo-link_img" width="154" height="64">
    		</a>
     	
-    	<nav class="main-navigation">
+    	<nav class="main-header_main-navigation main-navigation">
     		<ul class="main-navigation_list">
     			<li class="main-navigation_item">
     				<a href="#" class="main-navigation_link">Каталог</a>
-    				<ul class="catalog-list">
-    					<li class="catalog-list_item">
-    						<a href="#" class="catalog-list_link catalog-list_link--new">Новинки</a>
+    				<ul class="main-navigation_submenu submenu-list">
+    					<li class="submenu-list_item">
+    						<a href="#" class="submenu-list_link catalog-list_link--accent">Новинки</a>
     					</li>
     					
-    					<li class="catalog-list_item">
-    						<a href="catalog.html" class="catalog-list_link">Сливочное</a>
+    					<li class="submenu-list_item">
+    						<a href="catalog.html" class="submenu-list_link">Сливочное</a>
     					</li>
     					
-    					<li class="catalog-list_item">
-    						<a href="#" class="catalog-list_link">Щербеты</a>
+    					<li class="submenu-list_item">
+    						<a href="#" class="submenu-list_link">Щербеты</a>
     					</li>
     					
-    					<li class="catalog-list_item">
-    						<a href="#" class="catalog-list_link">Фруктовый лед</a>
+    					<li class="submenu-list_item">
+    						<a href="#" class="submenu-list_link">Фруктовый лед</a>
     					</li>
     					
-    					<li class="catalog-list_item">
-    						<a href="#" class="catalog-list_link">Мелорин</a>
+    					<li class="submenu-list_item">
+    						<a href="#" class="submenu-list_link">Мелорин</a>
     					</li>
     				</ul>
     			</li>
@@ -50,28 +50,28 @@
     		</ul>
     	</nav>
     	
-    	<div class="main-search">
-			<a href="#" class="main-search_link">Поиск</a>
+    	<div class="main-header_search">
+			<a href="#" class="main-header_search-link">Поиск</a>
 
-			<form action="#" method="get" class="main-search_form">
-				<label for="main-search_field-search" class="main-search_label">Текст для поиска:</label>
-				<input type="search" name="search" class="main-search_field" id="main-search_field-search">
-				<input type="submit" class="btn btn--serch-form" value="Найти">
+			<form action="#" method="get" class="main-header_search-form search-form">
+				<label for="search-form_field-search" class="search-form_label">Текст для поиска:</label>
+				<input type="search" name="search" class="search-form_field" id="search-form_field-search">
+				<input type="submit" class="btn search-form_btn" value="Найти">
 			</form>
     	</div>
     	
 
-		<div class="sing-in">
-			<a href="#" class="sing-in_link">Вход</a>
+		<div class="main-header_sing-in">
+			<a href="#" class="main-header_sing-in-link">Вход</a>
 
-			<form action="#" method="get" class="sing-in-form" name="sing-in_form sing-in-form">
+			<form action="#" method="get" class="main-header_sing-in-form sing-in-form" name="sing-in_form sing-in-form">
 				<label for="sing-in-form_field-name">Ваш e-mail:</label>
 				<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_field-name">
 
 				<label for="sing-in-form_field-password">Ваш пароль:</label>
 				<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_field-password">
 
-				<input type="submit" class="btn btn--sing-in-form" value="Войти">
+				<input type="submit" class="btn sing-in-form_btn" value="Войти">
 
 				<ul class="sing-in-form_help-list">
 					<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
@@ -80,16 +80,36 @@
 			</form>
 		</div>
 
-		<div class="basket">
+		<div class="main-header_basket basket">
 			<a href="#" class="basket_link">Корзина</a>
 
 			<form action="#" method="get" class="basket_form" name="basket_form">
-				<table class="basket_form-list">
-					<!--Не совсем понимаю еще, как лучше сделать список корзины. 
-						Предпологаю, что таблицей со вложенными элементами формы-->
-				</table>
+				<ul class="basket_form-list">
+					<li class="basket_item">
+						<img src="img/svg/x-small.svg" alt="Удалить позицию из корзины" class="basket_item-del">
+						<img src="#" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
+						<p class="basket_item-name">Пломбир с апельсиновым джемом</p>
+						<span class="basket_item-amount-of-product">1,5 кг</span>
+						<span class="basket_item-price-for-one">200 руб.</span>
+						<span class="basket_item-price">300 руб.</span>
+					</li>
+					
+					<li class="basket_item">
+						<img src="img/svg/x-small.svg" alt="Удалить позицию из корзины" class="basket_item-del">
+						<img src="#" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
+						<p class="basket_item-name">Клубничный пломбир с присыпкой из белого шоколада</p>
+						<span class="basket_item-amount-of-product">1,5 кг</span>
+						<span class="basket_item-price-for-one">300 руб.</span>
+						<span class="basket_item-price">450 руб.</span>
+					</li>
+				</ul>
+				
+				<p class="basket_total">
+					Итого: 
+					<span class="basket_total-amount">750 руб.</span>
+				</p>
 
-				<input type="submit" value="Оформить заказ">
+				<input type="submit" value="Оформить заказ" class="btn basket_btn">
 			</form>
 		</div>
 
@@ -141,18 +161,18 @@
     	</section>
     	
     	<section class="stock-cards">
-    		<h2 class="want-banners_title">Наши специальные предложения:</h2>
-    		<ul class="want-banners_list">
-    			<li class="want-banners_item want-banner">
-    				<h3 class="want-banner_banner-title">Малинка даром!</h3>
-    				<p class="want-banner_description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+    		<h2 class="stock-cards_title">Наши специальные предложения:</h2>
+    		<ul class="stock-cards_list">
+    			<li class="stock-cards_item stock-card">
+    				<h3 class="stock-card_title">Малинка даром!</h3>
+    				<p class="stock-card_description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
     				
     				<a href="#" class="btn">Хочу варенье!</a>
     			</li>
     			
-    			<li class="want-banners_item want-banner">
-    				<h3 class="want-banner_banner-title">Шоколадки даром!</h3>
-    				<p class="want-banner_description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+    			<li class="stock-cards_item stock-card">
+    				<h3 class="stock-card_card-title">Шоколадки даром!</h3>
+    				<p class="stock-card_description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
     				
     				<a href="#" class="btn">Хочу шоколадки!</a>
     			</li>
@@ -224,8 +244,8 @@
     		<h2 class="features_title">Наши приемущества</h2>
     		
     		<dl class="features_intro">
-    			<dt class="features__intro-term">Магазин Глэйси &mdash; </dt>
-    			<dd class="features__intro-definition">это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</dd>
+    			<dt class="features_intro-term">Магазин Глэйси &mdash; </dt>
+    			<dd class="features_intro-definition">это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</dd>
     		</dl>
     		
     		<ul class="features_list">
@@ -266,10 +286,12 @@
     	
     	<section class="contacts">
     		<h2 class="contacts_title">Наши конакты</h2>
-    		<iframe class="contacts_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1509887807231" width="800" height="600" style="border:0"></iframe>
+    		<img src="img/map.png" alt="Магазин мороженого Глэйси - Большая Конюшенная 19/8, Санкт-Петербург" class="contact_map--img">
     		
-    		<article class="contacts_banner">
-    			<h3 class="contacts_banner-title">Адрес и телефон</h3>
+    		<iframe class="contacts_map--widget" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1509887807231" width="800" height="600" style="border:0"></iframe>
+    		
+    		<article class="contacts_card">
+    			<h3 class="contacts_title">Адрес и телефон</h3>
     			<address class="contacts_item">
     				Адрес главного офиса<br>
 					и офлайн-магазина:<br>
@@ -290,16 +312,16 @@
     <form action="#" class="feedback-form">
     		<h3 class="feedback-form_title">Мы обязательно вам ответим!</h3>
     		
-			<label for="feedback-form_name-field-id" class="feedback-form_field-label">Ваше имя:</label>
+			<label for="feedback-form_field-name" class="feedback-form_field-label">Ваше имя:</label>
 			<input type="text" id="feedback-form_field-name" name="name" class="feedback-form_field" placeholder="Как вас зовут?">
 
-			<label for="feedback-form_email-field-id" class="feedback-form_field-label">Ваш e-mail:</label>
+			<label for="feedback-form_field-email" class="feedback-form_field-label">Ваш e-mail:</label>
 			<input type="email" id="feedback-form_field-email" name="email" class="feedback-form_field" placeholder="Ваша почта для ответа?">
     	
-    	<label for="feedback-form_message-field-id" class="feedback-form_field-label">Текст письма:</label>
-    	<textarea name="message" id="feedback-form_field-message" class="feedback-form_textarea" placeholder="Напишите что-нибудь..."></textarea>
+    	<label for="feedback-form_field-message" class="feedback-form_field-label">Текст письма:</label>
+    	<textarea name="message" id="feedback-form_field-message" class="feedback-form_field feedback-form_field--message" placeholder="Напишите что-нибудь..."></textarea>
     	
-    	<input type="submit" class="btn btn--feedback-form">
+    	<input type="submit" class="btn feedback-form_btn">
 
     </form>
     
