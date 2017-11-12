@@ -7,7 +7,7 @@
   <body>
 
     <header class="main-header">
-    	<h1 class="main-header_title">Глейси - магазин мороженого</h1>
+    	<h1 class="main-header_title visually-hidden">Глейси - магазин мороженого</h1>
     	
     	<a href="index.html" class="main-header_logo-link logo-link">
    			<img src="img/svg/logo.svg" alt="Глейси - магазин мороженого" class="logo-link_img" width="154" height="64">
@@ -23,7 +23,7 @@
     					</li>
     					
     					<li class="submenu-list_item">
-    						<a href="catalog.html" class="submenu-list_link">Сливочное</a>
+    						<a class="submenu-list_link">Сливочное</a>
     					</li>
     					
     					<li class="submenu-list_item">
@@ -53,8 +53,8 @@
     	<div class="main-header_search">
 			<a href="#" class="main-header_search-link">Поиск</a>
 
-			<form action="#" method="get" class="main-header_search-form search-form">
-				<label for="search-form_field-search" class="search-form_label">Текст для поиска:</label>
+			<form action="https://echo.htmlacademy.ru/" method="get" class="main-header_search-form search-form">
+				<label for="search-form_field-search" class="search-form_label visually-hidden">Текст для поиска:</label>
 				<input type="search" name="search" class="search-form_field" id="search-form_field-search">
 				<input type="submit" class="btn search-form_btn" value="Найти">
 			</form>
@@ -64,11 +64,11 @@
 		<div class="main-header_sing-in">
 			<a href="#" class="main-header_sing-in-link">Вход</a>
 
-			<form action="#" method="get" class="main-header_sing-in-form sing-in-form" name="sing-in_form sing-in-form">
-				<label for="sing-in-form_field-name">Ваш e-mail:</label>
+			<form action="https://echo.htmlacademy.ru/" method="get" class="main-header_sing-in-form sing-in-form" name="sing-in_form sing-in-form">
+				<label for="sing-in-form_field-name visually-hidden">Ваш e-mail:</label>
 				<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_field-name">
 
-				<label for="sing-in-form_field-password">Ваш пароль:</label>
+				<label for="sing-in-form_field-password visually-hidden">Ваш пароль:</label>
 				<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_field-password">
 
 				<input type="submit" class="btn sing-in-form_btn" value="Войти">
@@ -81,13 +81,33 @@
 		</div>
 
 		<div class="main-header_basket basket">
-			<a href="#" class="basket_link">Корзина</a>
+			<a href="#" class="basket_link basket_link--active">Корзина</a>
 
-			<form action="#" method="get" class="basket_form" name="basket_form">
-				<table class="basket_form-list">
-					<!--Не совсем понимаю еще, как лучше сделать список корзины. 
-						Предпологаю, что таблицей со вложенными элементами формы-->
-				</table>
+			<form action="https://echo.htmlacademy.ru/" method="get" class="basket_form" name="basket_form">
+				<ul class="basket_form-list">
+					<li class="basket_item">
+						<img src="img/svg/x-small.svg" width="11" height="11" alt="Удалить позицию из корзины" class="basket_item-del">
+						<img src="img/catalog-ice/1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
+						<p class="basket_item-name">Пломбир с апельсиновым джемом</p>
+						<span class="basket_item-amount-of-product">1,5 кг</span>
+						<span class="basket_item-price-for-one">200 руб.</span>
+						<span class="basket_item-price">300 руб.</span>
+					</li>
+					
+					<li class="basket_item">
+						<img src="img/svg/x-small.svg" width="11" height="11" alt="Удалить позицию из корзины" class="basket_item-del">
+						<img src="img/catalog-ice/3.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
+						<p class="basket_item-name">Клубничный пломбир с присыпкой из белого шоколада</p>
+						<span class="basket_item-amount-of-product">1,5 кг</span>
+						<span class="basket_item-price-for-one">300 руб.</span>
+						<span class="basket_item-price">450 руб.</span>
+					</li>
+				</ul>
+				
+				<p class="basket_total">
+					Итого: 
+					<span class="basket_total-amount">750 руб.</span>
+				</p>
 
 				<input type="submit" value="Оформить заказ" class="btn basket_btn">
 			</form>
@@ -135,6 +155,14 @@
     			
     			<fieldset class="catalog-nav_formgroup">
     				<legend class="catalog-nav_formgroup-title">Цена: </legend>
+						
+					<p class="catalog-nav_price-multirange multirange">
+						<label for="catalog-nav_price-from" class="multirange_left-flag" tabindex="0">От:</label>
+						<input type="number" class="catalog-nav_price-from" id="catalog-nav_price-from">
+
+						<label for="catalog-nav_price-to" class="multirange_right-flag" tabindex="0">До:</label>
+						<input type="number" class="catalog-nav_price-to" id="catalog-nav_price-to">
+					</p>
 						
     			</fieldset>
     				
@@ -199,7 +227,7 @@
     	</section>
     	
     	<section class="products">
-    		<h2 class="products_title">Товары</h2>
+    		<h2 class="products_title visually-hidden">Товары</h2>
     		
 			<ul class="products_list">
 				<li class="products_item product-card">
@@ -378,21 +406,17 @@
     
     <footer class="main-footer">
     	<ul class="social-list">
-    		<li class="social-list_item">
-    			<a href="#" class="social-list_link social-list_link--tw">Мы в твитере</a>
-    		</li>
+    		<li><a href="#" class="social-list_link social-list_link--tw">
+				<span class="visually-hidden">Мы в твиттере</span></a></li>
     		
-    		<li class="social-list_item">
-    			<a href="#" class="social-list_link social-list_link--in">Мы в инстаграме</a>
-    		</li>
+    		<li><a href="#" class="social-list_link social-list_link--in">
+				<span class="visually-hidden">Мы в инстаграме</span></a></li>
     		
-    		<li class="social-list_item">
-    			<a href="#" class="social-list_link social-list_link--fb">Мы в фэйсбуке</a>
-    		</li>
+    		<li><a href="#" class="social-list_link social-list_link--fb">
+					<span class="visually-hidden">Мы в фэйсбуке</span></a></li>
     		
-    		<li class="social-list_item">
-    			<a href="#" class="social-list_link social-list_link--vk">Мы во вконтакте</a>
-    		</li>
+    		<li><a href="#" class="social-list_link social-list_link--vk">
+				<span class="visually-hidden">Мы во вконтакте</span></a></li>
     	</ul>
     	
     	<ul class="other-info">
