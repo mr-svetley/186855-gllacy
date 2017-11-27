@@ -21,7 +21,7 @@
 						<a href="#" class="main-navigation_link">Каталог</a>
 						<ul class="main-navigation_submenu submenu-list">
 							<li class="submenu-list_item">
-								<a href="#" class="submenu-list_link catalog-list_link--accent">Новинки</a>
+								<a href="#" class="submenu-list_link submenu-list_link--accent">Новинки</a>
 							</li>
 
 							<li class="submenu-list_item">
@@ -59,8 +59,8 @@
 
 				<form action="https://echo.htmlacademy.ru/" method="get" class="main-header_search-form search-form">
 					<label for="search-form_field-search" class="search-form_label visually-hidden">Текст для поиска:</label>
-					<input type="search" name="search" class="search-form_field" id="search-form_field-search">
-					<input type="submit" class="btn search-form_btn" value="Найти">
+					<input type="search" name="search" class="search-form_field" id="search-form_field-search" placeholder="Что ищем?">
+					<input type="submit" class="btn search-form_btn visually-hidden" value="Найти">
 				</form>
 			</div>
 
@@ -68,48 +68,34 @@
 				<a href="#" class="main-header_sing-in-link">Вход</a>
 
 				<form action="https://echo.htmlacademy.ru/" method="get" class="main-header_sing-in-form sing-in-form" name="sing-in_form sing-in-form">
-					<label for="sing-in-form_field-name visually-hidden">Ваш e-mail:</label>
-					<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_field-name">
+					<label for="sing-in-form_field-name " class="visually-hidden">Ваш e-mail:</label>
+					<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_field-name" placeholder="Электронная почта">
 
-					<label for="sing-in-form_field-password visually-hidden">Ваш пароль:</label>
-					<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_field-password">
+					<label for="sing-in-form_field-password" class="visually-hidden">Ваш пароль:</label>
+					<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_field-password" placeholder="Пароль">
 
-					<input type="submit" class="btn sing-in-form_btn" value="Войти">
+					<div class="sing-in-form_group">
+						<input type="submit" class="btn sing-in-form_btn" value="Войти">
 
-					<ul class="sing-in-form_help-list">
-						<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
-						<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Новая регистрация</a></li>
-					</ul>
+						<ul class="sing-in-form_help-list">
+							<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
+							<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Новая регистрация</a></li>
+						</ul>
+					</div>
 				</form>
 			</div>
 
-			<div class="main-header_basket basket">
+			<div class="main-header_basket basket basket--empty">
 				<a href="#" class="basket_link" aria-label="Корзина">Пусто</a>
 
-				<form action="https://echo.htmlacademy.ru/" method="get" class="basket_form" name="basket_form">
-					<ul class="basket_form-list">
-						<li class="basket_item">
-							<img src="img/svg/x-small.svg" width="11" height="11" alt="Удалить позицию из корзины" class="basket_item-del">
-							<img src="img/catalog-ice/1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
-							<p class="basket_item-name">Пломбир с апельсиновым джемом</p>
-							<span class="basket_item-amount-of-product">1,5 кг</span>
-							<span class="basket_item-price-for-one">200 руб.</span>
-							<span class="basket_item-price">300 руб.</span>
-						</li>
-
-						<li class="basket_item">
-							<img src="img/svg/x-small.svg" width="11" height="11" alt="Удалить позицию из корзины" class="basket_item-del">
-							<img src="img/catalog-ice/3.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
-							<p class="basket_item-name">Клубничный пломбир с присыпкой из белого шоколада</p>
-							<span class="basket_item-amount-of-product">1,5 кг</span>
-							<span class="basket_item-price-for-one">300 руб.</span>
-							<span class="basket_item-price">450 руб.</span>
-						</li>
+				<form action="https://echo.htmlacademy.ru/" method="get" class="basket_form basket_form--empty" name="basket_form">
+					<ul class="basket_form-list ">
+						
 					</ul>
 
 					<p class="basket_total">
 						Итого: 
-						<span class="basket_total-amount">750 руб.</span>
+						<span class="basket_total-amount">0 руб.</span>
 					</p>
 
 					<input type="submit" value="Оформить заказ" class="btn basket_btn">
@@ -358,13 +344,13 @@
     	</ul>
     	
     	<p class="copiright">
-    		<a href="#" class="copyright_link copyright_link--img">
+    		<a href="#https://htmlacademy.ru/intensive/htmlcss" class="copyright_link copyright_link--img">
     			<img src="img/svg/logo-htmlacademy-small.svg" alt="html academy" class="copyright_img" width="108" height="39">
     		</a>
     		
     		<span class="copyright_text">
     		Сделано в 
-    		<a href="#" class="copyright_link copyright_link--text">HTML Academy</a>
+    		<a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright_link copyright_link--text">HTML Academy</a>
     		© 2017</span>
     	</p>
     </footer>

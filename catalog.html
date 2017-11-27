@@ -9,112 +9,118 @@
   <body class="page">
 
     <header class="main-header">
-    	<h1 class="main-header_title visually-hidden">Глейси - магазин мороженого</h1>
-    	
-    	<a href="index.html" class="main-header_logo-link logo-link">
-   			<img src="img/svg/logo.svg" alt="Глейси - магазин мороженого" class="logo-link_img" width="154" height="64">
-   		</a>
-    	
-    	<nav class="main-header_main-navigation main-navigation">
-    		<ul class="main-navigation_list">
-    			<li class="main-navigation_item">
-    				<a href="#" class="main-navigation_link">Каталог</a>
-    				<ul class="main-navigation_submenu submenu-list">
-    					<li class="submenu-list_item">
-    						<a href="#" class="submenu-list_link catalog-list_link--accent">Новинки</a>
-    					</li>
-    					
-    					<li class="submenu-list_item">
-    						<a class="submenu-list_link">Сливочное</a>
-    					</li>
-    					
-    					<li class="submenu-list_item">
-    						<a href="#" class="submenu-list_link">Щербеты</a>
-    					</li>
-    					
-    					<li class="submenu-list_item">
-    						<a href="#" class="submenu-list_link">Фруктовый лед</a>
-    					</li>
-    					
-    					<li class="submenu-list_item">
-    						<a href="#" class="submenu-list_link">Мелорин</a>
-    					</li>
-    				</ul>
-    			</li>
-    			
-    			<li class="main-navigation_item">
-    				<a href="#" class="main-navigation_link">Доставка и оплата</a>
-    			</li>
-    			
-    			<li class="main-navigation_item">
-    				<a href="#" class="main-navigation_link">О компании</a>
-    			</li>
-    		</ul>
-    	</nav>
-    	
-    	<div class="main-header_search">
-			<a href="#" class="main-header_search-link">Поиск</a>
+    	<div class="main-header_group">
+			<h1 class="main-header_title visually-hidden">Глейси - магазин мороженого</h1>
 
-			<form action="https://echo.htmlacademy.ru/" method="get" class="main-header_search-form search-form">
-				<label for="search-form_field-search" class="search-form_label visually-hidden">Текст для поиска:</label>
-				<input type="search" name="search" class="search-form_field" id="search-form_field-search">
-				<input type="submit" class="btn search-form_btn" value="Найти">
-			</form>
+			<a href="index.html" class="main-header_logo-link logo-link">
+				<img src="img/svg/logo.svg" alt="Глейси - магазин мороженого" class="logo-link_img" width="154" height="64">
+			</a>
+
+			<nav class="main-header_main-navigation main-navigation">
+				<ul class="main-navigation_list">
+					<li class="main-navigation_item">
+						<a href="#" class="main-navigation_link main-navigation_link--active">Каталог</a>
+						<ul class="main-navigation_submenu submenu-list">
+							<li class="submenu-list_item">
+								<a href="#" class="submenu-list_link submenu-list_link--accent">Новинки</a>
+							</li>
+
+							<li class="submenu-list_item">
+								<a href="catalog.html" class="submenu-list_link submenu-list_link--active">Сливочное</a>
+							</li>
+
+							<li class="submenu-list_item">
+								<a href="#" class="submenu-list_link">Щербеты</a>
+							</li>
+
+							<li class="submenu-list_item">
+								<a href="#" class="submenu-list_link">Фруктовый лед</a>
+							</li>
+
+							<li class="submenu-list_item">
+								<a href="#" class="submenu-list_link">Мелорин</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="main-navigation_item">
+						<a href="#" class="main-navigation_link">Доставка и оплата</a>
+					</li>
+
+					<li class="main-navigation_item">
+						<a href="#" class="main-navigation_link">О компании</a>
+					</li>
+				</ul>
+			</nav>
     	</div>
     	
-		<div class="main-header_sing-in">
-			<a href="#" class="main-header_sing-in-link">Вход</a>
+    	<div class="main-header_group">
+			<div class="main-header_search">
+				<a href="#" class="main-header_search-link"><span class="visually-hidden">Поиск</span></a>
 
-			<form action="https://echo.htmlacademy.ru/" method="get" class="main-header_sing-in-form sing-in-form" name="sing-in-form">
-				<label for="sing-in-form_field-name visually-hidden">Ваш e-mail:</label>
-				<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_field-name">
+				<form action="https://echo.htmlacademy.ru/" method="get" class="main-header_search-form search-form">
+					<label for="search-form_field-search" class="search-form_label visually-hidden">Текст для поиска:</label>
+					<input type="search" name="search" class="search-form_field" id="search-form_field-search" placeholder="Что ищем?">
+					<input type="submit" class="btn search-form_btn visually-hidden" value="Найти">
+				</form>
+			</div>
 
-				<label for="sing-in-form_field-password visually-hidden">Ваш пароль:</label>
-				<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_field-password">
+			<div class="main-header_sing-in">
+				<a href="#" class="main-header_sing-in-link">Вход</a>
 
-				<input type="submit" class="btn sing-in-form_btn" value="Войти">
+				<form action="https://echo.htmlacademy.ru/" method="get" class="main-header_sing-in-form sing-in-form" name="sing-in_form sing-in-form">
+					<label for="sing-in-form_field-name " class="visually-hidden">Ваш e-mail:</label>
+					<input type="email" name="email" class="sing-in-form_field" id="sing-in-form_field-name" placeholder="Электронная почта">
 
-				<ul class="sing-in-form_help-list">
-					<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
-					<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Новая регистрация</a></li>
-				</ul>
-			</form>
+					<label for="sing-in-form_field-password" class="visually-hidden">Ваш пароль:</label>
+					<input type="password" name="password" class="sing-in-form_field" id="sing-in-form_field-password" placeholder="Пароль">
+
+					<div class="sing-in-form_group">
+						<input type="submit" class="btn sing-in-form_btn" value="Войти">
+
+						<ul class="sing-in-form_help-list">
+							<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Забыли пароль?</a></li>
+							<li class="sing-in-form_help-item"><a href="#" class="sing-in-form_help-link">Новая регистрация</a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+
+			<div class="main-header_basket basket">
+				<a href="#" class="basket_link basket_link--full" aria-label="Корзина">2 товара</a>
+
+				<form action="https://echo.htmlacademy.ru/" method="get" class="basket_form" name="basket_form">
+					<ul class="basket_form-list">
+						<li class="basket_item">
+							<button type="button" aria-label="Удалить позицию из корзины" class="basket_item-del"></button>
+							<img src="img/catalog-ice/1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
+							<p class="basket_item-name">Пломбир с апельсиновым джемом</p>
+							<span class="basket_item-amount-of-product">1,5 кг</span>
+							<span class="basket_item-price-for-one">200 руб.</span>
+							<span class="basket_item-price">300 руб.</span>
+						</li>
+
+						<li class="basket_item">
+							<button type="button" aria-label="Удалить позицию из корзины" class="basket_item-del"></button>
+							<img src="img/catalog-ice/3.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
+							<p class="basket_item-name">Клубничный пломбир с присыпкой из белого шоколада</p>
+							<span class="basket_item-amount-of-product">1,5 кг</span>
+							<span class="basket_item-price-for-one">300 руб.</span>
+							<span class="basket_item-price">450 руб.</span>
+						</li>
+					</ul>
+
+					<p class="basket_total">
+						Итого: 
+						<span class="basket_total-amount">750 руб.</span>
+					</p>
+
+					<input type="submit" value="Оформить заказ" class="btn basket_btn">
+				</form>
+			</div>
 		</div>
-
-		<div class="main-header_basket basket">
-			<a href="#" class="basket_link basket_link--active">Корзина</a>
-
-			<form action="https://echo.htmlacademy.ru/" method="get" class="basket_form" name="basket_form">
-				<ul class="basket_form-list">
-					<li class="basket_item">
-						<img src="img/svg/x-small.svg" width="11" height="11" alt="Удалить позицию из корзины" class="basket_item-del">
-						<img src="img/catalog-ice/1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
-						<p class="basket_item-name">Пломбир с апельсиновым джемом</p>
-						<span class="basket_item-amount-of-product">1,5 кг</span>
-						<span class="basket_item-price-for-one">200 руб.</span>
-						<span class="basket_item-price">300 руб.</span>
-					</li>
-					
-					<li class="basket_item">
-						<img src="img/svg/x-small.svg" width="11" height="11" alt="Удалить позицию из корзины" class="basket_item-del">
-						<img src="img/catalog-ice/3.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" class="basket_item-img">
-						<p class="basket_item-name">Клубничный пломбир с присыпкой из белого шоколада</p>
-						<span class="basket_item-amount-of-product">1,5 кг</span>
-						<span class="basket_item-price-for-one">300 руб.</span>
-						<span class="basket_item-price">450 руб.</span>
-					</li>
-				</ul>
-				
-				<p class="basket_total">
-					Итого: 
-					<span class="basket_total-amount">750 руб.</span>
-				</p>
-
-				<input type="submit" value="Оформить заказ" class="btn basket_btn">
-			</form>
-		</div>
-    	
-    	<p class="main-header-contact-info">
+	
+    	<p class="main-header_contact-info">
     		<span class="main-header_working-time">С 10 до 20, ежедневно</span>
     		<span class="main-header_phone">8 812 450-25-25</span>
     	</p>
@@ -144,24 +150,25 @@
 				<fieldset class="catalog-nav_formgroup">
     					<legend class="catalog-nav_formgroup-title">Сортировка:</legend>
     					
-    					<select name="sort" class="catalog-nav_item catalog-nav_item--sorting">
-    						<option value="popular">по популярности</option>
-    						<option value="price-inc">сначала недорогие</option>
-    						<option value="popular-dec">сначала дорогие</option>
-    						<option value="fat">по жирности</option>
+    					<select name="sort" class="catalog-nav_item">
+    						<option class="catalog-nav_sorting-option" value="popular">по популярности</option>
+    						<option class="catalog-nav_sorting-option"  value="price-inc">сначала недорогие</option>
+    						<option class="catalog-nav_sorting-option"  value="popular-dec">сначала дорогие</option>
+    						<option class="catalog-nav_sorting-option"  value="fat">по жирности</option>
     					</select>
     					
     			</fieldset>
     			
     			<fieldset class="catalog-nav_formgroup">
-    				<legend class="catalog-nav_formgroup-title">Цена: </legend>
+    				<legend class="catalog-nav_formgroup-title">Цена: 
+    					<input type="text" class="catalog-nav_price" id="catalog-nav_price-from" value="10 руб."> - 
+    					<input type="text" class="catalog-nav_price" id="catalog-nav_price-to" value="1000 руб.">
+    				</legend>
 						
-					<p class="catalog-nav_price-multirange multirange">
-						<label for="catalog-nav_price-from" class="multirange_left-flag" tabindex="0">От:</label>
-						<input type="number" class="catalog-nav_price-from" id="catalog-nav_price-from">
-
-						<label for="catalog-nav_price-to" class="multirange_right-flag" tabindex="0">До:</label>
-						<input type="number" class="catalog-nav_price-to" id="catalog-nav_price-to">
+					<p class="catalog-nav_item catalog-nav_price-multirange multirange">
+						<label for="catalog-nav_price-from" class="multirange_flag multirange_flag--from" tabindex="0">От:</label>
+						
+						<label for="catalog-nav_price-to" class="multirange_flag multirange_flag--to" tabindex="0">До:</label>	
 					</p>
 						
     			</fieldset>
@@ -222,7 +229,7 @@
 					</div>
     			</fieldset>
     				
-    			<input type="submit" value="Показать" class="catalog-nav_submit">
+    			<input type="submit" value="Показать" class="catalog-nav_item catalog-nav_submit">
     		</form>
     	</section>
     	
@@ -388,17 +395,17 @@
 			</ul>
    	
    			<div class="products_paginator">
-				<a href="#" class="btn btn-paginator">Назад</a>
+				<a href="#" class="btn-paginator btn-paginator--back">Назад</a>
 
 				<ul class="paginator-list">
-					<li class="paginator-list_item"><a href="#" class="paginator-list_link">1</a></li>
+					<li class="paginator-list_item"><a class="paginator-list_link paginator-list_link--active">1</a></li>
 					<li class="paginator-list_item"><a href="#" class="paginator-list_link">2</a></li>
 					<li class="paginator-list_item"><a href="#" class="paginator-list_link">3</a></li>
 					<li class="paginator-list_item"><a href="#" class="paginator-list_link">4</a></li>
 					<li class="paginator-list_item"><a href="#" class="paginator-list_link">5</a></li>
 				</ul>
 
-				<a href="#" class="btn btn-paginator">Вперед</a>
+				<a href="#" class="btn-paginator btn-paginator--next">Вперед</a>
 			</div>
     	
 		</section>
@@ -406,16 +413,16 @@
     
     <footer class="main-footer">
     	<ul class="social-list">
-    		<li><a href="#" class="social-list_link social-list_link--tw">
+    		<li class="social-list_item"><a href="#" class="social-list_link social-list_link--tw">
 				<span class="visually-hidden">Мы в твиттере</span></a></li>
     		
-    		<li><a href="#" class="social-list_link social-list_link--in">
+    		<li class="social-list_item"><a href="#" class="social-list_link social-list_link--in">
 				<span class="visually-hidden">Мы в инстаграме</span></a></li>
     		
-    		<li><a href="#" class="social-list_link social-list_link--fb">
+    		<li class="social-list_item"><a href="#" class="social-list_link social-list_link--fb">
 					<span class="visually-hidden">Мы в фэйсбуке</span></a></li>
     		
-    		<li><a href="#" class="social-list_link social-list_link--vk">
+    		<li class="social-list_item"><a href="#" class="social-list_link social-list_link--vk">
 				<span class="visually-hidden">Мы во вконтакте</span></a></li>
     	</ul>
     	
@@ -438,13 +445,17 @@
     	</ul>
     	
     	<p class="copiright">
-    		<a href="#" class="copiright_link">
-    			<img src="img/svg/logo-htmlacademy-small.svg" alt="html academy" class="copiright_html-academy-img" width="108" height="39">
+    		<a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright_link copyright_link--img">
+    			<img src="img/svg/logo-htmlacademy-small.svg" alt="html academy" class="copyright_img" width="108" height="39">
     		</a>
     		
-    		<span class="copiright-text">Сделано в HTML Academy © 2017</span>
+    		<span class="copyright_text">
+    		Сделано в 
+    		<a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright_link copyright_link--text">HTML Academy</a>
+    		© 2017</span>
     	</p>
     </footer>
+
 
   </body>
 </html>
