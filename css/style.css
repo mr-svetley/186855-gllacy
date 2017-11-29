@@ -775,7 +775,7 @@ html { box-sizing: border-box;}
 	
 	margin: 0 2.3%;
 	margin-top: 40px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 
 .products_list {
@@ -1488,8 +1488,8 @@ html { box-sizing: border-box;}
 
 .products_paginator {
 	display: flex;
-	margin-top: 42px;
-	margin-bottom: 3px;
+	margin-top: 44px;
+	margin-bottom: 30px;
 	align-self: flex-end;
 }
 
