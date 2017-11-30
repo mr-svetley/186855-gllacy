@@ -1282,7 +1282,6 @@ html { box-sizing: border-box;}
 .other-info_link:focus,
 .other-info_link:active {
 	color: #ffbc9e;
-	border-bottom: 1px solid #ffbc9e;
 }
 
 .other-info_link--accent {
