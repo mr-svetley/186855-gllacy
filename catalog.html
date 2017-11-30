@@ -147,10 +147,10 @@
     	
     	<section class="catalog-nav">
     		<form action="https://echo.htmlacademy.ru/" class="catalog-nav_filter-form" method="get">
-				<fieldset class="catalog-nav_formgroup">
+				<fieldset class="catalog-nav_formgroup catalog-nav_formgroup--sort">
     					<legend class="catalog-nav_formgroup-title">Сортировка:</legend>
     					
-    					<select name="sort" class="catalog-nav_item">
+    					<select name="sort" class="catalog-nav_item catalog-nav_sort">
     						<option class="catalog-nav_sorting-option" value="popular">по популярности</option>
     						<option class="catalog-nav_sorting-option"  value="price-inc">сначала недорогие</option>
     						<option class="catalog-nav_sorting-option"  value="popular-dec">сначала дорогие</option>
@@ -159,77 +159,61 @@
     					
     			</fieldset>
     			
-    			<fieldset class="catalog-nav_formgroup">
+    			<fieldset class="catalog-nav_formgroup catalog-nav_formgroup--price">
     				<legend class="catalog-nav_formgroup-title">Цена: 
-    					<input type="text" class="catalog-nav_price" id="catalog-nav_price-from" value="10 руб."> - 
-    					<input type="text" class="catalog-nav_price" id="catalog-nav_price-to" value="1000 руб.">
+   					 	<span class="catalog-nav_price catalog-nav_price--from">100 руб.</span>
+    					&ndash;
+    					<span class="catalog-nav_price catalog-nav_price--from">500 руб.</span>
     				</legend>
 						
 					<p class="catalog-nav_item catalog-nav_price-multirange multirange">
 						<label for="catalog-nav_price-from" class="multirange_flag multirange_flag--from" tabindex="0">От:</label>
-						
-						<label for="catalog-nav_price-to" class="multirange_flag multirange_flag--to" tabindex="0">До:</label>	
+						<input type="text" class="visually-hidden catalog-nav_price catalog-nav_price--from" id="catalog-nav_price-from" value="10 руб." tabindex="-1">
+						<label for="catalog-nav_price-to" class="multirange_flag multirange_flag--to" tabindex="0">До:</label>
+						<input type="text" class="visually-hidden catalog-nav_price catalog-nav_price--to" id="catalog-nav_price-to" value="1000 руб." tabindex="-1">	
 					</p>
 						
     			</fieldset>
     				
-    			<fieldset class="catalog-nav_formgroup">
+    			<fieldset class="catalog-nav_formgroup catalog-nav_formgroup--fat">
     				<legend class="catalog-nav_formgroup-title">Жирность</legend>
    					<div class="catalog-nav_item">
-    					<label class="catalog-nav_label">
-    						<input type="radio" name="fat" value="0" class="catalog-nav_radio">
-    						0
-    					</label>
+						<input type="radio" name="fat" value="0" class="catalog-nav_radio" id="catalog-nav_radio-fat-0">
+    					<label class="catalog-nav_label catalog-nav_label--radio" for="catalog-nav_radio-fat-0" tabindex="0">0%</label>
     					
-    					<label class="catalog-nav_label">
-    						<input type="radio" name="fat" value="<10" class="catalog-nav_radio">
-    						до 10
-    					</label>
+						<input type="radio" name="fat" value="<10" class="catalog-nav_radio" id="catalog-nav_radio-fat-10" checked>	
+    					<label class="catalog-nav_label catalog-nav_label--radio" for="catalog-nav_radio-fat-10" tabindex="0">до 10%</label>
     					
-    					<label class="catalog-nav_label">
-    						<input type="radio" name="fat" value="<30" class="catalog-nav_radio">
-    						до 30
-    					</label>
+						<input type="radio" name="fat" value="<30" class="catalog-nav_radio" id="catalog-nav_radio-fat-30">
+    					<label class="catalog-nav_label catalog-nav_label--radio" for="catalog-nav_radio-fat-30" tabindex="0">до 30%</label>
     					
-    					<label class="catalog-nav_label">
-    						<input type="radio" name="fat" value=">30" class="catalog-nav_radio">
-    						выше 30
-    					</label>
+						<input type="radio" name="fat" value=">30" class="catalog-nav_radio" id="catalog-nav_radio-fat">
+    					<label class="catalog-nav_label catalog-nav_label--radio" for="catalog-nav_radio-fat" tabindex="0">выше 30%</label>
 					</div>
     			</fieldset>
     			
-    			<fieldset class="catalog-nav_formgroup">
+    			<fieldset class="catalog-nav_formgroup catalog-nav_formgroup--filler">
 					<legend class="catalog-nav_formgroup-title">Наполнитель</legend>
 
 					<div class="catalog-nav_item">
-						<label class="catalog-nav_label">
-							<input type="checkbox" name="filler[]" value="chocolate" class="catalog-nav_checkbox">
-							шоколадные
-						</label>
-
-						<label class="catalog-nav_label">
-							<input type="checkbox" name="filler[]" value="sugar" class="catalog-nav_checkbox">
-							сахарные присыпки
-						</label>
-
-						<label class="catalog-nav_label">
-							<input type="checkbox" name="filler[]" value="fruit" class="catalog-nav_checkbox">
-							фрукты
-						</label>
-
-						<label class="catalog-nav_label">
-							<input type="checkbox" name="filler[]" value="syrup" class="catalog-nav_checkbox">
-							сиропы
-						</label>
-
-						<label class="catalog-nav_label">
-							<input type="checkbox" name="filler[]" value="jam" class="catalog-nav_checkbox">
-							джемы
-						</label>
+						<input type="checkbox" name="filler[]" value="chocolate" class="catalog-nav_checkbox" id="catalog-nav_checkbox-chocolate">
+						<label class="catalog-nav_label catalog-nav_label--checkbox" for="catalog-nav_checkbox-chocolate" tabindex="0">шоколадные</label>
+						
+						<input type="checkbox" name="filler[]" value="sugar" class="catalog-nav_checkbox" id="catalog-nav_checkbox-sugar">
+						<label class="catalog-nav_label catalog-nav_label--checkbox" for="catalog-nav_checkbox-sugar" tabindex="0">сахарные присыпки</label>
+						
+						<input type="checkbox" name="filler[]" value="fruit" class="catalog-nav_checkbox" id="catalog-nav_checkbox-fruit">
+						<label class="catalog-nav_label catalog-nav_label--checkbox" for="catalog-nav_checkbox-fruit" tabindex="0">фрукты</label>
+						
+						<input type="checkbox" name="filler[]" value="syrup" class="catalog-nav_checkbox" id="catalog-nav_checkbox-syrup">
+						<label class="catalog-nav_label catalog-nav_label--checkbox" for="catalog-nav_checkbox-syrup" tabindex="0">сиропы</label>
+						
+						<input type="checkbox" name="filler[]" value="jam" class="catalog-nav_checkbox" id="catalog-nav_checkbox-jam">
+						<label class="catalog-nav_label catalog-nav_label--checkbox" for="catalog-nav_checkbox-jam" tabindex="0">джемы</label>
 					</div>
     			</fieldset>
     				
-    			<input type="submit" value="Показать" class="catalog-nav_item catalog-nav_submit">
+    			<input type="submit" value="Применить" class="catalog-nav_item catalog-nav_submit">
     		</form>
     	</section>
     	
@@ -248,7 +232,9 @@
 						<h3 class="product-card_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+    					<button class="btn btn--fast-view">Быстрый просмотр</button>
+    				</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -262,7 +248,9 @@
 						<h3 class="product-card_name">Сливочно-кофейное с кусочками шоколада</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -276,7 +264,9 @@
 						<h3 class="product-card_name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -290,7 +280,9 @@
 						<h3 class="product-card_name">Сливочное крем-брюле с карамельной подливкой</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -304,7 +296,9 @@
 						<h3 class="product-card_name">Сливочное с брусничным джемом</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -318,7 +312,9 @@
 						<h3 class="product-card_name">Сливочно-черничное с цельными ягодами черники</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -332,7 +328,9 @@
 						<h3 class="product-card_name">Сливочно-лимонное с карамельной присыпкой</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -346,7 +344,9 @@
 						<h3 class="product-card_name">Сливочное с шоколадной стружкой</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -360,7 +360,9 @@
 						<h3 class="product-card_name">Сливочно-ванильное с кусочками шоколада</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -374,7 +376,9 @@
 						<h3 class="product-card_name">Сливочное с ментоловым сиропом</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -388,7 +392,9 @@
 						<h3 class="product-card_name">Сливочное с кусочками черного шоколада</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 
 				<li class="products_item product-card">
@@ -402,7 +408,9 @@
 						<h3 class="product-card_name">Сливочное с мятным сиропом</h3>
 					</a>
 
-					<button class="btn btn--fast-view">Быстрый просмотр</button>
+					<div class="product-card_hover">
+						<button class="btn btn--fast-view">Быстрый просмотр</button>
+					</div>
 				</li>
 			</ul>
    	
@@ -444,11 +452,11 @@
 			</li>
 			
 			<li class="other-info_item">
-				<a href="#" class="other-info_link">О производстве</a>
+				<a href="#" class="other-info_link">Наши документы</a>
 			</li>
 			
 			<li class="other-info_item">
-				<a href="#" class="other-info_link">Наши документы</a>
+				<a href="#" class="other-info_link">О производстве</a>
 			</li>
 			
 			<li class="other-info_item">
@@ -456,7 +464,7 @@
    			</li>
     	</ul>
     	
-    	<p class="copiright">
+    	<p class="copyright">
     		<a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright_link copyright_link--img">
     			<img src="img/svg/logo-htmlacademy-small.svg" alt="html academy" class="copyright_img" width="108" height="39">
     		</a>
