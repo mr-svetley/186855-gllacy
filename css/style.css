@@ -822,11 +822,13 @@ html { box-sizing: border-box;}
 	z-index: 5;
 }
 
-.product-card:hover {
+.product-card:hover,
+.product-card:focus {
 	z-index: 20;
 }
 
-.product-card:hover .product-card_hover {
+.product-card:hover .product-card_hover,
+.product-card:focus .product-card_hover{
 	display: flex;
 }
 
@@ -926,6 +928,7 @@ html { box-sizing: border-box;}
 	padding-bottom: 0;
 	border-radius: 15px;
 	margin: 0 2.3%;
+	margin-top: 1px;
 	margin-bottom: 40px;
 	background: url("../img/bg/wafer.jpg") repeat #eaddc1;
 }
@@ -1129,7 +1132,7 @@ html { box-sizing: border-box;}
 	width: 100%;
 }
 .contact_map--img {
-	transform: translateY(-30%);
+	transform: translateY(-27Fsor%);
 }
 
 .contacts_map--widget {
@@ -1524,6 +1527,10 @@ html { box-sizing: border-box;}
 
 .catalog-nav_sort {
 	padding-left: 11px;
+}
+
+.catalog-nav_sorting-option {
+	color: #323232;
 }
 
 .multirange {
