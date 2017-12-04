@@ -62,6 +62,7 @@ controlItem_3.addEventListener("click", function() {
 
 feedback_btn.addEventListener("click", function(evt) {
 	evt.preventDefault();
+	pop_up.classList.remove("pop-up--error");
 	overlay.classList.add("overlay--show");
 	pop_up.classList.add("pop-up--show");
 	
