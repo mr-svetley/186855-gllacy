@@ -69,7 +69,9 @@ feedback_btn.addEventListener("click", function(evt) {
 	if (storageName) {
 		user_name.value = storageName;
 		user_email.focus();
-    } else if (storageEmail) {
+    }
+	
+	if (storageEmail) {
 		user_email.value = storageEmail;
 		user_message.focus();
     }
