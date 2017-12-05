@@ -175,8 +175,7 @@ html { box-sizing: border-box;}
 }
 
 .main-navigation_item:hover .main-navigation_submenu,
-.main-navigation_item:focus .main-navigation_submenu,
-.main-navigation_item:focus-within  .main-navigation_submenu {
+.main-navigation_item:focus .main-navigation_submenu {
 	display: block;
 }
 
@@ -285,15 +284,14 @@ html { box-sizing: border-box;}
 .main-header_search-link:hover,
 .main-header_search-link:focus,
 .main-header_search:hover .main-header_search-link,
-.main-header_search:focus .main-header_search-link{
+.main-header_search:focus .main-header_search-link {
 	background-image: url(../img/svg/loupe-black.svg);
 	background-color: #f7f6f3;
 	color: #000;
 }
 
 .main-header_search:hover .main-header_search-form,
-.main-header_search:focus .main-header_search-form,
-.main-header_search:focus-within .main-header_search-form{
+.main-header_search:focus .main-header_search-form {
 	display: block;
 }
 
@@ -369,8 +367,7 @@ html { box-sizing: border-box;}
 }
 
 .main-header_sign-in:hover .main-header_sign-in-form,
-.main-header_sign-in:focus .main-header_sign-in-form,
-.main-header_sign-in:focus-within .main-header_sign-in-form {
+.main-header_sign-in:focus .main-header_sign-in-form {
 	display: block;
 }
 
@@ -487,8 +484,7 @@ html { box-sizing: border-box;}
 }
 
 .main-header_basket:hover .basket_form,
-.main-header_basket:focus .basket_form,
-.main-header_basket:focus-within .basket_form {
+.main-header_basket:focus .basket_form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1561,6 +1557,23 @@ width: 100%;
 	color: #fff;
 }
 
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus,
+.breadcrumbs-link:active {
+	color: #ffbc9e;
+}
+
+.breadcrumbs-link--active:hover,
+.breadcrumbs-link--active:focus,
+.breadcrumbs-link--active:active {
+	text-decoration: none;
+	font-family: Roboto, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #fff;
+}
+
 .catalog-page-header_title {
 	font-family: Roboto, Arial, sans-serif;
 	font-weight: bold;
@@ -1681,6 +1694,7 @@ width: 100%;
 	background: url("../img/svg/filter-button.svg") no-repeat center top;
 	font-size: 1px;
 	color: transparent;
+	cursor: pointer;
 }
 
 .multirange_flag--from {
@@ -1829,7 +1843,9 @@ width: 100%;
 }
 
 .paginator-list_link--active,
-.paginator-list_link:focus {
+.paginator-list_link--active:hover,
+.paginator-list_link--active:focus,
+.paginator-list_link--active:active {
 	background-color: #fff;
 	color: #323232;
 }
